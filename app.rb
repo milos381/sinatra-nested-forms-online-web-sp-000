@@ -17,7 +17,7 @@ module FormsLab
       @pirate = Pirate.new(params[:pirate])
 
       #<input type="text" id="ship_name_1" name="pirate[ships][][name] and the others"
-      params[:pirate][:ships].each do |details|
+      params[:pirate][:pine].each do |details|
         Ship.new(details)
       end
       @ships = Ship.all
