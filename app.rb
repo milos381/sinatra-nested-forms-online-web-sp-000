@@ -11,7 +11,7 @@ module FormsLab
       erb :'pirates/new'
     end
     post '/pirates' do
-      #binding.pry
+      binding.pry
 
       #<input type="text" id="name" name="pirate[name] and the others">
       @pirate = Pirate.new(params[:pirate])
